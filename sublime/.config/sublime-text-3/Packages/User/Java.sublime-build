@@ -1,0 +1,5 @@
+{
+   "cmd" : ["konsole", "-e", "bash -c \"echo ~~~ERRORS~~~ && if [ -e ${file_base_name}.class ] ; then rm ${file_base_name}.class ; fi && javac $file_name ; if [ -e ${file_base_name}.class ] ; then echo ~~~OUTPUT~~~ && java ${file_base_name} ; fi && read -p ~~~DONE~~~ -s && bash exec\""],
+   "selector" : "source.java",
+   "working_dir" : "$file_path"
+}

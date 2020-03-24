@@ -1,0 +1,28 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"AutoFileName",
+		"BracketGuard",
+		"BracketHighlighter",
+		"Color Highlighter",
+		"Dracula Color Scheme",
+		"Elixir",
+		"Git",
+		"MarkdownEditing",
+		"Monokai - Spacegray",
+		"Package Control",
+		"PackageResourceViewer",
+		"Predawn",
+		"Rust Enhanced",
+		"SideBarEnhancements",
+		"Sublime Text 3 Snippets",
+		"Terminal",
+		"Theme - Spacegray",
+		"TrailingSpaces"
+	]
+}

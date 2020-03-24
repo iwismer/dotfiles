@@ -1,0 +1,7 @@
+[user]
+	email = isaac@iwismer.ca
+	name = iwismer
+[core]
+	editor = vim
+	autocrlf = input
+	excludesfile = ~/.gitignore

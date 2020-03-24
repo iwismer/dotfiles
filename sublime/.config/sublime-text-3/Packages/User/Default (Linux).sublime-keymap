@@ -1,0 +1,84 @@
+[
+{"keys": ["ctrl+;"], "command": "run_macro_file", "args": {"file": "Packages/User/semicolon.sublime-macro"}},
+{ "keys": ["ctrl+tab"], "command": "next_view" },
+{ "keys": ["ctrl+shift+tab"], "command": "prev_view" },
+{
+        "keys": ["ctrl+shift+l","ctrl+shift+m"],
+        "command": "javatar_util",
+        "args": {
+            "util_type": "parse",
+            "text": "#"
+        }
+    },{
+        "keys": ["ctrl+shift+l","ctrl+shift+k"],
+        "command": "javatar",
+        "args": {
+            "action": {
+                "name": "main"
+            }
+        }
+    },{
+        "keys": ["ctrl+shift+l","ctrl+shift+h"],
+        "command": "javatar",
+        "args": {
+            "action": {
+                "name": "help"
+            }
+        }
+    },{
+        "keys": ["ctrl+shift+l","ctrl+shift+b"],
+        "command": "javatar",
+        "args": {
+            "action": {
+                "name": "builds"
+            }
+        }
+    },{
+        "keys": ["ctrl+shift+l","ctrl+shift+j"],
+        "command": "javatar",
+        "args": {
+            "action": {
+                "name": "calls"
+            }
+        }
+    },{
+        "keys": ["ctrl+shift+l","ctrl+shift+o"],
+        "command": "javatar",
+        "args": {
+            "action": {
+                "name": "operations"
+            }
+        }
+    },{
+        "keys": ["ctrl+shift+l","ctrl+shift+n"],
+        "command": "javatar",
+        "args": {
+            "action": {
+                "name": "creates"
+            }
+        }
+    },{
+        "keys": ["ctrl+shift+l","ctrl+shift+,"],
+        "command": "javatar",
+        "args": {
+            "action": {
+                "name": "project_settings"
+            }
+        }
+    },{
+        "keys": ["ctrl+shift+l","ctrl+shift+."],
+        "command": "javatar",
+        "args": {
+            "action": {
+                "name": "global_settings"
+            }
+        }
+    },{
+        "keys": ["ctrl+shift+l","ctrl+shift+p"],
+        "command": "javatar_create_package"
+    },{
+        "keys": ["ctrl+shift+l","ctrl+shift+i"],
+        "command": "javatar_organize_imports"
+    }
+
+]

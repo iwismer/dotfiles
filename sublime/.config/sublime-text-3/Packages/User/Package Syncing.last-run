@@ -1,0 +1,256 @@
+{
+    "last_local_data": {
+        "C.sublime-settings": {
+            "dir": "", 
+            "path": "/home/isaac/.config/sublime-text-3/Packages/User/C.sublime-settings", 
+            "version": 1482537058.865401
+        }, 
+        "Color Highlighter/themes/Monokai - Spacegray (SL).tmTheme": {
+            "dir": "Color Highlighter/themes", 
+            "path": "/home/isaac/.config/sublime-text-3/Packages/User/Color Highlighter/themes/Monokai - Spacegray (SL).tmTheme", 
+            "version": 1513892107.0217085
+        }, 
+        "Default (Linux).sublime-keymap": {
+            "dir": "", 
+            "path": "/home/isaac/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap", 
+            "version": 1508804838.60747
+        }, 
+        "Default (Windows).sublime-keymap": {
+            "dir": "", 
+            "path": "/home/isaac/.config/sublime-text-3/Packages/User/Default (Windows).sublime-keymap", 
+            "version": 1482375500.9148116
+        }, 
+        "HTML.sublime-settings": {
+            "dir": "", 
+            "path": "/home/isaac/.config/sublime-text-3/Packages/User/HTML.sublime-settings", 
+            "version": 1512913568.120883
+        }, 
+        "Java.sublime-build": {
+            "dir": "", 
+            "path": "/home/isaac/.config/sublime-text-3/Packages/User/Java.sublime-build", 
+            "version": 1505872452.5392044
+        }, 
+        "Javatar.sublime-settings": {
+            "dir": "", 
+            "path": "/home/isaac/.config/sublime-text-3/Packages/User/Javatar.sublime-settings", 
+            "version": 1513892248.1728299
+        }, 
+        "M68k-Assembly.sublime-settings": {
+            "dir": "", 
+            "path": "/home/isaac/.config/sublime-text-3/Packages/User/M68k-Assembly.sublime-settings", 
+            "version": 1511451065.1336432
+        }, 
+        "Package Control.sublime-settings": {
+            "dir": "", 
+            "path": "/home/isaac/.config/sublime-text-3/Packages/User/Package Control.sublime-settings", 
+            "version": 1513892101.1983304
+        }, 
+        "Preferences.sublime-settings": {
+            "dir": "", 
+            "path": "/home/isaac/.config/sublime-text-3/Packages/User/Preferences.sublime-settings", 
+            "version": 1513892102.198338
+        }, 
+        "SideBarEnhancements/Open With/Side Bar.sublime-menu": {
+            "dir": "SideBarEnhancements/Open With", 
+            "path": "/home/isaac/.config/sublime-text-3/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu", 
+            "version": 1509027577.2780018
+        }, 
+        "SublimeLinter.sublime-settings": {
+            "dir": "", 
+            "path": "/home/isaac/.config/sublime-text-3/Packages/User/SublimeLinter.sublime-settings", 
+            "version": 1513891988.6274867
+        }, 
+        "SublimeLinter/1337 (SL).tmTheme": {
+            "dir": "SublimeLinter", 
+            "path": "/home/isaac/.config/sublime-text-3/Packages/User/SublimeLinter/1337 (SL).tmTheme", 
+            "version": 1513892042.9178874
+        }, 
+        "SublimeLinter/Amy (SL).tmTheme": {
+            "dir": "SublimeLinter", 
+            "path": "/home/isaac/.config/sublime-text-3/Packages/User/SublimeLinter/Amy (SL).tmTheme", 
+            "version": 1482375500.9214783
+        }, 
+        "SublimeLinter/Breakers (SL).tmTheme": {
+            "dir": "SublimeLinter", 
+            "path": "/home/isaac/.config/sublime-text-3/Packages/User/SublimeLinter/Breakers (SL).tmTheme", 
+            "version": 1513892033.831153
+        }, 
+        "SublimeLinter/Mariana (SL).tmTheme": {
+            "dir": "SublimeLinter", 
+            "path": "/home/isaac/.config/sublime-text-3/Packages/User/SublimeLinter/Mariana (SL).tmTheme", 
+            "version": 1513892038.0111842
+        }, 
+        "SublimeLinter/Monokai (SL).tmTheme": {
+            "dir": "SublimeLinter", 
+            "path": "/home/isaac/.config/sublime-text-3/Packages/User/SublimeLinter/Monokai (SL).tmTheme", 
+            "version": 1513892041.8645463
+        }, 
+        "SublimeLinter/Monokai - Spacegray (SL).tmTheme": {
+            "dir": "SublimeLinter", 
+            "path": "/home/isaac/.config/sublime-text-3/Packages/User/SublimeLinter/Monokai - Spacegray (SL).tmTheme", 
+            "version": 1513892054.297973
+        }, 
+        "SublimeLinter/Monokai - Spacegray Eighties (SL).tmTheme": {
+            "dir": "SublimeLinter", 
+            "path": "/home/isaac/.config/sublime-text-3/Packages/User/SublimeLinter/Monokai - Spacegray Eighties (SL).tmTheme", 
+            "version": 1513892052.0512893
+        }, 
+        "SublimeLinter/Pastels on Dark (SL).tmTheme": {
+            "dir": "SublimeLinter", 
+            "path": "/home/isaac/.config/sublime-text-3/Packages/User/SublimeLinter/Pastels on Dark (SL).tmTheme", 
+            "version": 1482375500.9214783
+        }, 
+        "SublimeLinter/Sixteen (SL).tmTheme": {
+            "dir": "SublimeLinter", 
+            "path": "/home/isaac/.config/sublime-text-3/Packages/User/SublimeLinter/Sixteen (SL).tmTheme", 
+            "version": 1513892042.3912168
+        }, 
+        "Terminal.sublime-settings": {
+            "dir": "", 
+            "path": "/home/isaac/.config/sublime-text-3/Packages/User/Terminal.sublime-settings", 
+            "version": 1505228112.9278214
+        }, 
+        "c.sublime-build": {
+            "dir": "", 
+            "path": "/home/isaac/.config/sublime-text-3/Packages/User/c.sublime-build", 
+            "version": 1505872465.2623906
+        }, 
+        "python.sublime-build": {
+            "dir": "", 
+            "path": "/home/isaac/.config/sublime-text-3/Packages/User/python.sublime-build", 
+            "version": 1505872476.5789368
+        }, 
+        "semicolon.sublime-macro": {
+            "dir": "", 
+            "path": "/home/isaac/.config/sublime-text-3/Packages/User/semicolon.sublime-macro", 
+            "version": 1483207071.8615165
+        }
+    }, 
+    "last_remote_data": {
+        "C.sublime-settings": {
+            "dir": "", 
+            "path": "/home/isaac/nextcloud/C.sublime-settings", 
+            "version": 1482537058.865401
+        }, 
+        "Color Highlighter/themes/Monokai - Spacegray (SL).tmTheme": {
+            "dir": "Color Highlighter/themes", 
+            "path": "/home/isaac/nextcloud/Color Highlighter/themes/Monokai - Spacegray (SL).tmTheme", 
+            "version": 1513892107.0217085
+        }, 
+        "Default (Linux).sublime-keymap": {
+            "dir": "", 
+            "path": "/home/isaac/nextcloud/Default (Linux).sublime-keymap", 
+            "version": 1508804838.60747
+        }, 
+        "Default (Windows).sublime-keymap": {
+            "dir": "", 
+            "path": "/home/isaac/nextcloud/Default (Windows).sublime-keymap", 
+            "version": 1482375500.9148116
+        }, 
+        "HTML.sublime-settings": {
+            "dir": "", 
+            "path": "/home/isaac/nextcloud/HTML.sublime-settings", 
+            "version": 1512913568.120883
+        }, 
+        "Java.sublime-build": {
+            "dir": "", 
+            "path": "/home/isaac/nextcloud/Java.sublime-build", 
+            "version": 1505872452.5392044
+        }, 
+        "Javatar.sublime-settings": {
+            "dir": "", 
+            "path": "/home/isaac/nextcloud/Javatar.sublime-settings", 
+            "version": 1513892248.1728299
+        }, 
+        "M68k-Assembly.sublime-settings": {
+            "dir": "", 
+            "path": "/home/isaac/nextcloud/M68k-Assembly.sublime-settings", 
+            "version": 1511451065.1336432
+        }, 
+        "Package Control.sublime-settings": {
+            "dir": "", 
+            "path": "/home/isaac/nextcloud/Package Control.sublime-settings", 
+            "version": 1513892101.1983304
+        }, 
+        "Preferences.sublime-settings": {
+            "dir": "", 
+            "path": "/home/isaac/nextcloud/Preferences.sublime-settings", 
+            "version": 1513892102.198338
+        }, 
+        "SideBarEnhancements/Open With/Side Bar.sublime-menu": {
+            "dir": "SideBarEnhancements/Open With", 
+            "path": "/home/isaac/nextcloud/SideBarEnhancements/Open With/Side Bar.sublime-menu", 
+            "version": 1509027577.2780018
+        }, 
+        "SublimeLinter.sublime-settings": {
+            "dir": "", 
+            "path": "/home/isaac/nextcloud/SublimeLinter.sublime-settings", 
+            "version": 1513891988.6274867
+        }, 
+        "SublimeLinter/1337 (SL).tmTheme": {
+            "dir": "SublimeLinter", 
+            "path": "/home/isaac/nextcloud/SublimeLinter/1337 (SL).tmTheme", 
+            "version": 1513892042.9178874
+        }, 
+        "SublimeLinter/Amy (SL).tmTheme": {
+            "dir": "SublimeLinter", 
+            "path": "/home/isaac/nextcloud/SublimeLinter/Amy (SL).tmTheme", 
+            "version": 1482375500.9214783
+        }, 
+        "SublimeLinter/Breakers (SL).tmTheme": {
+            "dir": "SublimeLinter", 
+            "path": "/home/isaac/nextcloud/SublimeLinter/Breakers (SL).tmTheme", 
+            "version": 1513892033.831153
+        }, 
+        "SublimeLinter/Mariana (SL).tmTheme": {
+            "dir": "SublimeLinter", 
+            "path": "/home/isaac/nextcloud/SublimeLinter/Mariana (SL).tmTheme", 
+            "version": 1513892038.0111842
+        }, 
+        "SublimeLinter/Monokai (SL).tmTheme": {
+            "dir": "SublimeLinter", 
+            "path": "/home/isaac/nextcloud/SublimeLinter/Monokai (SL).tmTheme", 
+            "version": 1513892041.8645463
+        }, 
+        "SublimeLinter/Monokai - Spacegray (SL).tmTheme": {
+            "dir": "SublimeLinter", 
+            "path": "/home/isaac/nextcloud/SublimeLinter/Monokai - Spacegray (SL).tmTheme", 
+            "version": 1513892054.297973
+        }, 
+        "SublimeLinter/Monokai - Spacegray Eighties (SL).tmTheme": {
+            "dir": "SublimeLinter", 
+            "path": "/home/isaac/nextcloud/SublimeLinter/Monokai - Spacegray Eighties (SL).tmTheme", 
+            "version": 1513892052.0512893
+        }, 
+        "SublimeLinter/Pastels on Dark (SL).tmTheme": {
+            "dir": "SublimeLinter", 
+            "path": "/home/isaac/nextcloud/SublimeLinter/Pastels on Dark (SL).tmTheme", 
+            "version": 1482375500.9214783
+        }, 
+        "SublimeLinter/Sixteen (SL).tmTheme": {
+            "dir": "SublimeLinter", 
+            "path": "/home/isaac/nextcloud/SublimeLinter/Sixteen (SL).tmTheme", 
+            "version": 1513892042.3912168
+        }, 
+        "Terminal.sublime-settings": {
+            "dir": "", 
+            "path": "/home/isaac/nextcloud/Terminal.sublime-settings", 
+            "version": 1505228112.9278214
+        }, 
+        "c.sublime-build": {
+            "dir": "", 
+            "path": "/home/isaac/nextcloud/c.sublime-build", 
+            "version": 1505872465.2623906
+        }, 
+        "python.sublime-build": {
+            "dir": "", 
+            "path": "/home/isaac/nextcloud/python.sublime-build", 
+            "version": 1505872476.5789368
+        }, 
+        "semicolon.sublime-macro": {
+            "dir": "", 
+            "path": "/home/isaac/nextcloud/semicolon.sublime-macro", 
+            "version": 1483207071.8615165
+        }
+    }
+}

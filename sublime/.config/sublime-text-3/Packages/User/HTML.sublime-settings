@@ -1,0 +1,5 @@
+// These settings override both User and Default settings for the HTML syntax
+{
+    "tab_size": 2,
+    "auto_complete_commit_on_tab": true
+}

@@ -1,0 +1,32 @@
+{
+	"added_words":
+	[
+		"Wismer",
+		"nums",
+		"txt",
+		"Gord",
+		"Flewelling",
+		"iwismer",
+		"Arduino",
+		"Adafruit",
+		"Arduino's"
+	],
+	"auto_complete_commit_on_tab": true,
+	"color_scheme": "Packages/User/SublimeLinter/Oceanic Next Markdown (SL).tmTheme",
+	"dictionary": "Packages/Dictionaries/English (Canadian).dic",
+	"dpi_scale": 2.0,
+	"font_face": "Hack Lig",
+	"font_options":
+	[
+	],
+	"font_size": 10,
+	"ignored_packages":
+	[
+		"Markdown",
+		"Rust",
+		"Vintage"
+	],
+	"tab_size": 4,
+	"theme": "Default.sublime-theme",
+	"translate_tabs_to_spaces": true
+}

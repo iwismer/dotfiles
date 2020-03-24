@@ -1,0 +1,2 @@
+export MOZ_USE_XINPUT2=1
+export GTK_USE_PORTAL=1

@@ -1,0 +1,21 @@
+set tabstop=4
+set shiftwidth=4
+set expandtab
+syntax on
+set mouse=a
+set number
+
+"File Type Specific
+au BufRead *.c      set cc=78 textwidth=78
+au BufRead *.md     set cc=72 tw=72
+au BufRead *.x68    set noexpandtab filetype=asm68k
+au BufRead *.go     set noexpandtab
+
+
+set t_Co=256 "force 256 colour support
+
+set undodir=$XDG_DATA_HOME/vim/undo
+set directory=$XDG_DATA_HOME/vim/swap
+set backupdir=$XDG_DATA_HOME/vim/backup
+set viminfo+='1000,n$XDG_DATA_HOME/vim/viminfo
+set runtimepath=$XDG_CONFIG_HOME/vim,$VIMRUNTIME,$XDG_CONFIG_HOME/vim/after

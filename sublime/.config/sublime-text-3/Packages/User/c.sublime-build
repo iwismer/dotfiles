@@ -1,0 +1,6 @@
+{
+    "cmd" : ["konsole", "-e", "bash -i -c \"echo ~~~ERRORS~~~ && if [ -e ${file_base_name} ] ; then rm ${file_base_name} ; fi && gcc $file_name -o ${file_base_name} -std=c99 -Wall -lm ; if [ -e ${file_base_name} ] ; then echo ~~~OUTPUT~~~ && ./${file_base_name} ; fi && read -p ~~~DONE~~~\""],
+    "selector" : "source.c",
+    "working_dir" : "$file_path"
+
+}

@@ -1,0 +1,5 @@
+[
+	{
+"keys": ["ctrl+;"], "command": "run_macro_file", "args": {"file": "Packages/User/semicolon.sublime-macro"}
+}
+]

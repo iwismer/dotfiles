@@ -1,0 +1,11 @@
+{
+	"extensions":
+	[
+		"x68",
+        
+	],
+    "auto_complete_commit_on_tab": false,
+    "tab_size": 8,
+    "translate_tabs_to_spaces": false,
+    "tab_completion": false
+}

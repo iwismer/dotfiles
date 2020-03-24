@@ -1,0 +1,19 @@
+alias ls='exa'
+alias cat='bat'
+alias notes='watchexec -w . -e rmd,yml -- pandoc -o notes.pdf metadata.yml notes.rmd'
+alias ext-display='xrandr --output DP1 --right-of eDP1 --scale 2x2 && krestart && latte-restart'
+alias set-mouse='xinput list | rg -o "Logitech Gaming Mouse G502[ ]+\tid=\d\d" | cut -d= -f2 | xargs -I% xinput set-button-map % 1 2 3 4 5 10 11 8 9 6 7 12 13 14 15 16 17 18 19 20'
+alias home='set-mouse && ext-display'
+alias hdmi-audio='pacmd set-card-profile 0 output:hdmi-stereo'
+alias krestart='kstart5 plasmashell -- --replace'
+alias latte-restart='kstart5 latte-dock -- --replace'
+#alias feh='feh -. -Z --auto-rotate'
+alias update='yay -Syu --sudoloop'
+alias backup2='sudo rsync -aAXv --progress --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/veracrypt1","/lost+found","/home/*/.cache/*","/home/*/.local/share/Trash/*","/home/*/.thumbnails/*","/swapfile"} --delete / /run/media/isaac/isaac_backup/backup/'
+alias vi='vim'
+alias cloc='tokei'
+alias make='make -B'
+alias zshconfig="vim $XDG_CONFIG_HOME/zsh/zshrc"
+alias aliasconfig="vim $XDG_CONFIG_HOME/zsh/aliasrc"
+alias ohmyzsh="vim ~/.oh-my-zsh"
+alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'

@@ -1,0 +1,7 @@
+{
+   //"cmd" : ["start", "cmd", "/c", "python.exe ${file_base_name}.py & pause"],
+   "cmd" : ["konsole", "-e", "bash -c \"python ${file_base_name} && read -p ~~~DONE~~~ -s && bash exec\""],
+   "selector" : "source.py",
+   // "shell":true,
+   "working_dir" : "$file_path"
+}
