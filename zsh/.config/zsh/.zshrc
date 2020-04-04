@@ -46,6 +46,7 @@ plugins=(
     git
     sudo
     colored-man-pages
+    safe-paste
 )
 
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
@@ -63,6 +64,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.config/zsh/p10k.zsh ]] || source ~/.config/zsh/p10k.zsh
+[[ ! -f ~/.config/zsh/keys.zsh ]] || source ~/.config/zsh/keys.zsh
 
 [[ ! -f ~/.config/zsh/aliasrc ]] || source ~/.config/zsh/aliasrc
 [[ ! -f /usr/share/fzf/key-bindings.zsh ]] || source /usr/share/fzf/key-bindings.zsh
@@ -73,6 +75,7 @@ GTK_MODULES=appmenu-gtk-module
 setopt COMPLETE_ALIASES
 export EDITOR=vim
 
+# Variables for XDG folder compatibility
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
 export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
 export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker
@@ -86,6 +89,7 @@ export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 export VIMINIT=":source $XDG_CONFIG_HOME"/vim/vimrc
 
+# Funcion to format a markdown file
 function md_format {
   OUT=`(head -n $(grep -n "^\.\.\.$" $1 | cut -d : -f 1) $1; echo; pandoc -f markdown -t markdown-simple_tables --atx-headers --wrap=none $1) | cat`
   if [ $# -eq 1 ]
@@ -101,6 +105,23 @@ function md_format {
     fi
   fi
 }
+
+# Calculator
 c() { printf "%s\n" "$*" | bc }
 alias c="noglob c"
+
+# History search with up/down
+autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+
+[[ -n "${key[Up]}"   ]] && bindkey -- "${key[Up]}"   up-line-or-beginning-search
+[[ -n "${key[Down]}" ]] && bindkey -- "${key[Down]}" down-line-or-beginning-search
+
+# Move back and forth 1 word with ctrl-left/right
+key[Control-Left]="${terminfo[kLFT5]}"
+key[Control-Right]="${terminfo[kRIT5]}"
+
+[[ -n "${key[Control-Left]}"  ]] && bindkey -- "${key[Control-Left]}"  backward-word
+[[ -n "${key[Control-Right]}" ]] && bindkey -- "${key[Control-Right]}" forward-word
 
