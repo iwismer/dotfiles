@@ -1,0 +1,27 @@
+# Funcion to format a markdown file
+# Output to other file:
+# md_format input-file [output-file]
+# Output to stdout
+# md_format input-file --
+# Write back to file:
+# md_format input-file
+function md_format {
+  OUT=`(head -n $(grep -n "^\.\.\.$" $1 | cut -d : -f 1) $1; echo; pandoc -f markdown -t markdown-simple_tables --atx-headers --wrap=none $1) | cat`
+  if [ $# -eq 1 ]
+  then
+    echo -E $OUT | cat > $1
+  elif [ $# -eq 2 ]
+  then
+    if [ "--" = "$2" ]
+    then
+      echo -E $OUT
+    else
+      echo -E $OUT | cat > $2
+    fi
+  fi
+}
+
+# Calculator
+# c [calculation]
+c() { printf "%s\n" "$*" | bc }
+alias c="noglob c" 

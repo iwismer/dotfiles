@@ -39,3 +39,27 @@ if (( ${+terminfo[smkx]} && ${+terminfo[rmkx]} )); then
 	add-zle-hook-widget -Uz zle-line-finish zle_application_mode_stop
 fi
 
+# History search with up/down
+autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
+# Wrap functions to enable syntax highlighting
+# https://github.com/zsh-users/zsh-syntax-highlighting/issues/250
+my-highlighted-up-line-or-beginning-search() {
+  _zsh_highlight_call_widget up-line-or-beginning-search "$@"
+};
+
+my-highlighted-down-line-or-beginning-search() {
+  _zsh_highlight_call_widget down-line-or-beginning-search "$@"
+};
+zle -N my-highlighted-up-line-or-beginning-search
+zle -N my-highlighted-down-line-or-beginning-search
+
+[[ -n "${key[Up]}"   ]] && bindkey -- "${key[Up]}"   my-highlighted-up-line-or-beginning-search
+[[ -n "${key[Down]}" ]] && bindkey -- "${key[Down]}" my-highlighted-down-line-or-beginning-search
+
+# Move back and forth 1 word with ctrl-left/right
+key[Control-Left]="${terminfo[kLFT5]}"
+key[Control-Right]="${terminfo[kRIT5]}"
+
+[[ -n "${key[Control-Left]}"  ]] && bindkey -- "${key[Control-Left]}"  backward-word
+[[ -n "${key[Control-Right]}" ]] && bindkey -- "${key[Control-Right]}" forward-word
+
