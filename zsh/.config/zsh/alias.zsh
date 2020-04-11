@@ -42,7 +42,7 @@ alias moveraw="mkdir raw && mv *.ARW raw/"
 
 # Install and remove packages with fzf
 alias in="yay -Slq | fzf -m --preview 'yay -Si {1}'| xargs -ro yay -S"
-alias re="yay -Qeq | fzf -m --preview 'yay -Qi {1}' | xargs -ro yay -Rns"
+alias re="yay -Qq | fzf -m --preview 'yay -Qi {1}' | xargs -ro yay -Rns"
 
 # copy into clipboard
 alias copy="xclip -sel c"

@@ -69,3 +69,7 @@
 - `xbindkeys -f "$XDG_CONFIG_HOME"/xbindkeys/config`
 - `xinput set-button-map 18 1 2 3 4 5 10 11 8 9 6 7 12 13 14 15 16 17 18 19 20`
 - startup.sh
+
+## Powertop
+
+<https://wiki.archlinux.org/index.php/Powertop#Apply_settings>
