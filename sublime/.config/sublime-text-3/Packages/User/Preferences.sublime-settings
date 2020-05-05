@@ -22,6 +22,7 @@
 	"font_size": 10,
 	"ignored_packages":
 	[
+		"Dracula Color Scheme",
 		"Markdown",
 		"Rust",
 		"Vintage"
