@@ -18,6 +18,7 @@ alias set-mouse='xinput list | rg -o "Logitech Gaming Mouse G502[ ]+\tid=\d\d" |
 alias home='set-mouse && ext-display'
 # Send audio over HDMI
 alias hdmi-audio='pacmd set-card-profile 0 output:hdmi-stereo'
+alias headphones="amixer -c 0 cset 'numid=10' 1 numid=10,iface=MIXER,name='Headphone Mic Boost Volume'; type=INTEGER,access=rw---R--,values=2,min=0,max=3,step=0: values=1,1"
 
 # Aliases for killing things
 alias krestart='kstart5 plasmashell -- --replace'
@@ -27,12 +28,14 @@ alias latte-restart='kstart5 latte-dock -- --replace'
 
 # Backup computer
 alias backup='sudo rsync -aAXv --info=progress2 --info=stats1 --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/veracrypt1","/lost+found","/home/*/.cache/*","/home/*/.local/share/Trash/*","/home/*/.thumbnails/*","/swapfile","/var/lib/systemd-swap/swapfc/*"} --delete / /run/media/isaac/isaac_backup/backup/'
+alias backup-vps='rsync -aAXzz --info=progress2 --delete vps-root:/mnt/data/ /run/media/isaac/isaac_backup/server'
 
 # Easy configuration aliases
 alias zshconfig="vim $XDG_CONFIG_HOME/zsh/.zshrc"
 alias aliasconfig="vim $XDG_CONFIG_HOME/zsh/alias.zsh"
-alias pathconfig="vim $XDG_CONFIG_HOME/zsh/env.zsh"
+alias envconfig="vim $XDG_CONFIG_HOME/zsh/env.zsh"
 alias keyconfig="vim $XDG_CONFIG_HOME/zsh/keys.zsh"
+alias funcconfig="vim $XDG_CONFIG_HOME/zsh/functions.zsh"
 
 # Make wget follow XDG spec
 alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
