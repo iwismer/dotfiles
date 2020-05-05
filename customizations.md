@@ -27,6 +27,10 @@
 - Ensure that the 'Application Menu' is part of the window controls
 - Add the active window control widget to latte dock
 
+#### KDE File Picker
+
+Set the variable `GTK_USE_PORTAL=1`
+
 ## Touchpad
 
 - Install `gebaar`
