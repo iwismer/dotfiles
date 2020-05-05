@@ -1,0 +1,9 @@
+[Unit]
+Description=Lock the screen before suspending
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/loginctl lock-sessions
+
+[Install]
+Before=suspend.target
