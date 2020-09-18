@@ -1,9 +1,9 @@
 #!/bin/zsh
-sleep 5
+#sleep 5
 #sleep 3 && kstart5 --desktop 3 --maximize --fullscreen --windowclass konsole konsole -- --profile Fullscreen &
 #sleep 1 && kstart5 --desktop 2 --maximize --windowclass Thunderbird thunderbird &
 #eval $(ssh-agent)
-sleep 3 && kstart5 --iconify --windowclass keepassxc keepassxc &
+#sleep 3 && kstart5 --iconify --windowclass keepassxc keepassxc &
 # Nextcloud/Passwords.kdbx
 #sleep 2 && caprine &
 #sleep 3 && libinput-gestures-setup start &
