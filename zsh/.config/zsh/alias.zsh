@@ -18,6 +18,7 @@ alias set-mouse='xinput list | rg -o "Logitech Gaming Mouse G502[ ]+\tid=\d\d" |
 alias home='set-mouse && ext-display'
 # Send audio over HDMI
 alias hdmi-audio='pacmd set-card-profile 0 output:hdmi-stereo'
+alias normal-audio='pacmd set-card-profile 0 output:analog-stereo+input:analog-stereo'
 alias headphones="amixer -c 0 cset 'numid=10' 1 numid=10,iface=MIXER,name='Headphone Mic Boost Volume'; type=INTEGER,access=rw---R--,values=2,min=0,max=3,step=0: values=1,1"
 
 # Aliases for killing things
@@ -41,7 +42,7 @@ alias funcconfig="vim $XDG_CONFIG_HOME/zsh/functions.zsh"
 alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
 
 # Separate raw photos into their own folder
-alias moveraw="mkdir raw && mv *.ARW raw/"
+alias moveraw="mkdir -p raw && mv *.ARW raw/"
 
 # Install and remove packages with fzf
 alias in="yay -Slq | fzf -m --preview 'yay -Si {1}'| xargs -ro yay -S"
