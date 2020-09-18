@@ -77,3 +77,8 @@ Set the variable `GTK_USE_PORTAL=1`
 ## Powertop
 
 <https://wiki.archlinux.org/index.php/Powertop#Apply_settings>
+
+## KWin Scripts
+
+kwin-scripts-parachute
+
