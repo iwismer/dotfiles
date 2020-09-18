@@ -1,5 +1,5 @@
 [commands.swipe.three]
-up = "xdotool key ctrl+alt+d"
+up = "qdbus org.kde.kglobalaccel /component/kwin invokeShortcut Parachute"
 down = "yakuake"
 left = "xdotool key alt+Tab"
 right = "xdotool key alt+shift+Tab"
@@ -7,6 +7,6 @@ right = "xdotool key alt+shift+Tab"
 [commands.swipe.four]
 up = ""
 down = ""
-left = "qdbus org.kde.KWin /KWin org.kde.KWin.setCurrentDesktop $(((`qdbus org.kde.KWin /KWin org.kde.KWin.currentDesktop`) % 3 + 1))"
-right = "qdbus org.kde.KWin /KWin org.kde.KWin.setCurrentDesktop $(((`qdbus org.kde.KWin /KWin org.kde.KWin.currentDesktop` + 1) % 3 + 1))"
+left = "qdbus org.kde.KWin /KWin org.kde.KWin.setCurrentDesktop $(((`qdbus org.kde.KWin /KWin org.kde.KWin.currentDesktop`) % 2 + 1))"
+right = "qdbus org.kde.KWin /KWin org.kde.KWin.setCurrentDesktop $(((`qdbus org.kde.KWin /KWin org.kde.KWin.currentDesktop`) % 2 + 1))"
 
