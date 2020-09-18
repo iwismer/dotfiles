@@ -22,10 +22,10 @@
 	"font_size": 10,
 	"ignored_packages":
 	[
-		"Dracula Color Scheme",
 		"Markdown",
 		"Rust",
-		"Vintage"
+		"Vintage",
+		"zzz A File Icon zzz"
 	],
 	"tab_size": 4,
 	"theme": "Default.sublime-theme",

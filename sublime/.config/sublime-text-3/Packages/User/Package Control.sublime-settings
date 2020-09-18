@@ -2,7 +2,6 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
-		"Dracula Color Scheme"
 	],
 	"installed_packages":
 	[
@@ -12,8 +11,8 @@
 		"BracketHighlighter",
 		"Color Highlighter",
 		"Dracula Color Scheme",
-		"Elixir",
 		"Git",
+		"LSP",
 		"MarkdownEditing",
 		"Monokai - Spacegray",
 		"Package Control",
