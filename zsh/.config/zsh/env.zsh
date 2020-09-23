@@ -25,3 +25,4 @@ export VIMINIT=":source $XDG_CONFIG_HOME"/vim/vimrc
 
 # KDE Global menu
 GTK_MODULES=appmenu-gtk-module
+

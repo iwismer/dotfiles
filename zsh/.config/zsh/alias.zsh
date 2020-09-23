@@ -37,6 +37,11 @@ alias aliasconfig="vim $XDG_CONFIG_HOME/zsh/alias.zsh"
 alias envconfig="vim $XDG_CONFIG_HOME/zsh/env.zsh"
 alias keyconfig="vim $XDG_CONFIG_HOME/zsh/keys.zsh"
 alias funcconfig="vim $XDG_CONFIG_HOME/zsh/functions.zsh"
+alias config-zsh="zshconfig"
+alias config-alias="aliasconfig"
+alias config-env="envconfig"
+alias config-key="keyconfig"
+alias condig-func="funcconfig"
 
 # Make wget follow XDG spec
 alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
