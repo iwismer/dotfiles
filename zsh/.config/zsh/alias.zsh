@@ -41,7 +41,7 @@ alias config-zsh="zshconfig"
 alias config-alias="aliasconfig"
 alias config-env="envconfig"
 alias config-key="keyconfig"
-alias condig-func="funcconfig"
+alias config-func="funcconfig"
 
 # Make wget follow XDG spec
 alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
