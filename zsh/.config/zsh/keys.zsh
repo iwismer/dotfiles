@@ -66,5 +66,5 @@ key[Control-Right]="${terminfo[kRIT5]}"
 # [[ -n "${key[Control-Backspace]}" ]] && bindkey -- "${key[Control-Backspace]}" backword-kill-word
 
 # ctrl+backspace to delete word
-bindkey '^?' backward-kill-word
+bindkey '^H' backward-kill-word
 
