@@ -58,3 +58,7 @@ alias copy="xclip -sel c"
 
 # Super lazy ssh
 alias vps="ssh vps"
+
+# Using camera as webcam
+# https://www.crackedthecode.co/how-to-use-your-dslr-as-a-webcam-in-linux/
+alias webcam="sudo modprobe v4l2loopback && gphoto2 --stdout --capture-movie | ffmpeg -i - -vcodec rawvideo -pix_fmt yuv420p -threads 0 -f v4l2 /dev/video2"
