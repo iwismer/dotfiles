@@ -23,6 +23,10 @@ export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 export VIMINIT=":source $XDG_CONFIG_HOME"/vim/vimrc
 
+# Dotbare https://github.com/kazhala/dotbare
+export DOTBARE_DIR="$HOME/.dotfiles/.git"
+export DOTBARE_TREE="$HOME/.dotfiles"
+
 # KDE Global menu
 GTK_MODULES=appmenu-gtk-module
 
