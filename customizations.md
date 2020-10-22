@@ -9,7 +9,7 @@
 - Colours: Breeze
 - Fonts:
   - General: Source Sans Pro 12pt light
-  - Fixed Width: Hack Lig Nerd Font 11pt
+  - Fixed Width: Hack Lig Nerd Font 11pt/Iosevka SS12 Extended 11pt
   - Small: 8pt regular
   - Toolbar: 11pt regular
   - Menu: 11pt light
@@ -81,4 +81,12 @@ Set the variable `GTK_USE_PORTAL=1`
 ## KWin Scripts
 
 kwin-scripts-parachute
+
+## zsh
+
+Things that need to be installed:
+
+- fzf
+- dotbare
+
 
