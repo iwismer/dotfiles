@@ -74,10 +74,15 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 # Functions
 [[ ! -f ~/.config/zsh/functions.zsh ]] || source ~/.config/zsh/functions.zsh
 # fzf stuff
+[[ ! -f ~/.config/zsh/fzf.zsh ]] || source ~/.config/zsh/fzf.zsh
+# https://github.com/changyuheng/zsh-interactive-cd
+[[ ! -f ~/.config/zsh/zsh-interactive-cd.zsh ]] || source ~/.config/zsh/zsh-interactive-cd.zsh
 [[ ! -f /usr/share/fzf/key-bindings.zsh ]] || source /usr/share/fzf/key-bindings.zsh
 [[ ! -f /usr/share/fzf/completion.zsh ]] || source /usr/share/fzf/completion.zsh
 
-setopt COMPLETE_ALIASES
+# https://unix.stackexchange.com/a/250489
+#setopt COMPLETE_ALIASES
+
 # Fix highlighting on paste
 # https://github.com/zsh-users/zsh-autosuggestions/issues/511
 zle_bracketed_paste=()
