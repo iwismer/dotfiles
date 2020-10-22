@@ -77,6 +77,8 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 [[ ! -f ~/.config/zsh/fzf.zsh ]] || source ~/.config/zsh/fzf.zsh
 # https://github.com/changyuheng/zsh-interactive-cd
 [[ ! -f ~/.config/zsh/zsh-interactive-cd.zsh ]] || source ~/.config/zsh/zsh-interactive-cd.zsh
+# https://github.com/wfxr/forgit
+[[ ! -f ~/.config/zsh/forgit.zsh ]] || source ~/.config/zsh/forgit.zsh
 [[ ! -f /usr/share/fzf/key-bindings.zsh ]] || source /usr/share/fzf/key-bindings.zsh
 [[ ! -f /usr/share/fzf/completion.zsh ]] || source /usr/share/fzf/completion.zsh
 
