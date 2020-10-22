@@ -64,7 +64,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 [[ -r "/usr/share/z/z.sh" ]] && source /usr/share/z/z.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.config/zsh/p10k.zsh ]] || source ~/.config/zsh/p10k.zsh
+[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
 # Key Bindings
 [[ ! -f ~/.config/zsh/keys.zsh ]] || source ~/.config/zsh/keys.zsh
 # Modifications to path and environment variables
@@ -82,4 +82,3 @@ setopt COMPLETE_ALIASES
 # https://github.com/zsh-users/zsh-autosuggestions/issues/511
 zle_bracketed_paste=()
 #ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(bracketed-paste)
-
