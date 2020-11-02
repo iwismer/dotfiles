@@ -32,16 +32,12 @@ alias backup='sudo rsync -aAXv --info=progress2 --info=stats1 --exclude={"/dev/*
 alias backup-vps='rsync -aAXzz --info=progress2 --delete vps-root:/mnt/data/ /run/media/isaac/isaac_backup/server'
 
 # Easy configuration aliases
-alias zshconfig="vim $XDG_CONFIG_HOME/zsh/.zshrc"
-alias aliasconfig="vim $XDG_CONFIG_HOME/zsh/alias.zsh"
-alias envconfig="vim $XDG_CONFIG_HOME/zsh/env.zsh"
-alias keyconfig="vim $XDG_CONFIG_HOME/zsh/keys.zsh"
-alias funcconfig="vim $XDG_CONFIG_HOME/zsh/functions.zsh"
-alias config-zsh="zshconfig"
-alias config-alias="aliasconfig"
-alias config-env="envconfig"
-alias config-key="keyconfig"
-alias config-func="funcconfig"
+alias config-zsh="vim $XDG_CONFIG_HOME/zsh/.zshrc"
+alias config-alias="vim $XDG_CONFIG_HOME/zsh/alias.zsh"
+alias config-env="vim $XDG_CONFIG_HOME/zsh/env.zsh"
+alias config-key="vim $XDG_CONFIG_HOME/zsh/keys.zsh"
+alias config-func="vim $XDG_CONFIG_HOME/zsh/functions.zsh"
+alias config-fzf="vim $XDG_CONFIG_HOME/zsh/fzf.zsh"
 
 # Make wget follow XDG spec
 alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
