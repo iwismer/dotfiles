@@ -85,10 +85,11 @@ fstash() {
 
 # Select a docker container to remove
 function drm() {
-  local cid
-  cid=$(docker ps -a | sed 1d | fzf -q "$1" | awk '{print $1}')
+  docker ps -a | sed 1d | fzf -q "$1" --no-sort -m --tac | awk '{ print $1 }' | xargs -r docker rm
+}
 
-  [ -n "$cid" ] && docker rm "$cid"
+function drmi() {
+  docker images | sed 1d | fzf -q "$1" --no-sort -m --tac | awk '{ print $3 }' | xargs -r docker rmi
 }
 
 # --------------------
@@ -96,7 +97,22 @@ function drm() {
 # --------------------
 
 # Find man pages
-fman() {
-    man -k . | fzf --prompt='man> '  --preview $'echo {} | tr -d \'()\' | awk \'{printf "%s ", $2} {print $1}\' | xargs -r man' | tr -d '()' | awk '{printf "%s ", $2} {print $1}' | xargs -r man
+function fman() {
+    man -k . | fzf -q "$1" --prompt='man> '  --preview $'echo {} | tr -d \'()\' | awk \'{printf "%s ", $2} {print $1}\' | xargs -r man' | tr -d '()' | awk '{printf "%s ", $2} {print $1}' | xargs -r man
+}
+
+# --------------------
+# Pacman
+# --------------------
+function in() {
+    yay -Slq | fzf -q "$1" -m --preview 'yay -Si {1}'| xargs -ro yay -S
+}
+
+function ind() {
+    yay -Slq | fzf -q "$1" -m --preview 'yay -Si {1}'| xargs -ro yay -S --asdeps
+}
+
+function re() {
+    yay -Qq | fzf -q "$1" -m --preview 'yay -Qi {1}' | xargs -ro yay -Rns
 }
 
