@@ -26,16 +26,16 @@ function md_format {
 c() { printf "%s\n" "$*" | bc }
 alias c="noglob c" 
 
-function rmi {
-  docker images | tail -n +2 | while read -r line ; do
-      echo "$line"
-      read -q "var?Do you wish to remove this image?" < /dev/tty
-      echo
-      if [[ "$var" =~ ^[Yy]$ ]]
-      then
-          hash=`echo $line | awk '{print $3}'`
-          docker rmi $hash
-      fi
-  done
-}
+#function rmi {
+#  docker images | tail -n +2 | while read -r line ; do
+#      echo "$line"
+#      read -q "var?Do you wish to remove this image?" < /dev/tty
+#      echo
+#      if [[ "$var" =~ ^[Yy]$ ]]
+#      then
+#          hash=`echo $line | awk '{print $3}'`
+#          docker rmi $hash
+#      fi
+#  done
+#}
 
