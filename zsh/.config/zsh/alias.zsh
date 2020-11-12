@@ -1,9 +1,9 @@
 # Basic program replacement
 alias ls='exa'
-alias cat='bat'
+alias cat='bat -p'
 alias vi='vim'
 alias cloc='tokei'
-alias make='make -B'
+# alias make='make -B'
 
 # Update
 alias update='yay -Syu'
@@ -45,10 +45,7 @@ alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
 # Separate raw photos into their own folder
 alias moveraw="mkdir -p raw && mv *.ARW raw/"
 
-# Install and remove packages with fzf
-alias in="yay -Slq | fzf -m --preview 'yay -Si {1}'| xargs -ro yay -S"
-alias ind="yay -Slq | fzf -m --preview 'yay -Si {1}'| xargs -ro yay -S --asdeps"
-alias re="yay -Qq | fzf -m --preview 'yay -Qi {1}' | xargs -ro yay -Rns"
+# Get package information 
 alias pkg="yay -Qi"
 
 # copy into clipboard
@@ -60,3 +57,4 @@ alias vps="ssh vps"
 # Using camera as webcam
 # https://www.crackedthecode.co/how-to-use-your-dslr-as-a-webcam-in-linux/
 alias webcam="sudo modprobe v4l2loopback && gphoto2 --stdout --capture-movie | ffmpeg -i - -vcodec rawvideo -pix_fmt yuv420p -threads 0 -f v4l2 /dev/video2"
+
