@@ -5,26 +5,29 @@
 # md_format input-file --
 # Write back to file:
 # md_format input-file
-function md_format {
-  OUT=`(head -n $(grep -n "^\.\.\.$" $1 | cut -d : -f 1) $1; echo; pandoc -f markdown -t markdown-simple_tables --atx-headers --wrap=auto --columns=120 $1) | cat`
-  if [ $# -eq 1 ]
-  then
-    echo -E $OUT | cat > $1
-  elif [ $# -eq 2 ]
-  then
-    if [ "--" = "$2" ]
-    then
-      echo -E $OUT
-    else
-      echo -E $OUT | cat > $2
-    fi
-  fi
+function md_format() {
+	OUT=$( (
+		head -n $(grep -n "^\.\.\.$" $1 | cut -d : -f 1) $1
+		echo
+		pandoc -f markdown -t markdown-simple_tables --atx-headers --wrap=auto --columns=120 $1
+	) | cat)
+	if [ $# -eq 1 ]; then
+		echo -E $OUT | cat >$1
+	elif [ $# -eq 2 ]; then
+		if [ "--" = "$2" ]; then
+			echo -E $OUT
+		else
+			echo -E $OUT | cat >$2
+		fi
+	fi
 }
 
 # Calculator
 # c [calculation]
-c() { printf "%s\n" "$*" | bc }
-alias c="noglob c" 
+c() {
+	printf "%s\n" "$*" | bc
+}
+alias c="noglob c"
 
 function unarchive() {
 	if [ -f $1 ]; then

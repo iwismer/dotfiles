@@ -1,9 +1,9 @@
 # Set path
 typeset -U PATH path
 path=(
-    "$HOME/.local/bin"
-    "$HOME/.local/share/cargo/bin"
-    "$path[@]"
+	"$HOME/.local/bin"
+	"$HOME/.local/share/cargo/bin"
+	"$path[@]"
 )
 export PATH
 
@@ -29,4 +29,3 @@ export DOTBARE_TREE="$HOME/.dotfiles"
 
 # KDE Global menu
 GTK_MODULES=appmenu-gtk-module
-

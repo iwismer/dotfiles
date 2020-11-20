@@ -45,7 +45,7 @@ alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
 # Separate raw photos into their own folder
 alias moveraw="mkdir -p raw && mv *.ARW raw/"
 
-# Get package information 
+# Get package information
 alias pkg="paru -Qi"
 
 # copy into clipboard
@@ -60,4 +60,3 @@ alias webcam="sudo modprobe v4l2loopback && gphoto2 --stdout --capture-movie | f
 
 alias tb="nc termbin.com 9999"
 alias tbc="tb | copy"
-
