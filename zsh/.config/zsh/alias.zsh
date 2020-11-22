@@ -6,7 +6,7 @@ alias cloc='tokei'
 # alias make='make -B'
 
 # Update
-alias update='yay -Syu'
+alias update='paru -Syu'
 
 # Auto compile notes
 alias notes='watchexec -w . -e rmd,yml -- pandoc -o notes.pdf metadata.yml notes.rmd'
@@ -46,7 +46,7 @@ alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
 alias moveraw="mkdir -p raw && mv *.ARW raw/"
 
 # Get package information 
-alias pkg="yay -Qi"
+alias pkg="paru -Qi"
 
 # copy into clipboard
 alias copy="xclip -sel c"
