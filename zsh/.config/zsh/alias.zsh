@@ -28,8 +28,8 @@ alias latte-restart='kstart5 latte-dock -- --replace'
 #alias feh='feh -. -Z --auto-rotate'
 
 # Backup computer
-alias backup='sudo rsync -aAXv --info=progress2 --info=stats1 --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/veracrypt1","/lost+found","/home/*/.cache/*","/home/*/.local/share/Trash/*","/home/*/.thumbnails/*","/swapfile","/var/lib/systemd-swap/swapfc/*"} --delete / /run/media/isaac/isaac_backup/backup/'
-alias backup-vps='rsync -aAXzz --info=progress2 --delete vps-root:/mnt/data/ /run/media/isaac/isaac_backup/server'
+alias backup='sudo rsync -aAXvh --info=progress2 --info=stats1 --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/veracrypt1","/lost+found","/home/*/.cache/*","/home/*/.local/share/Trash/*","/home/*/.thumbnails/*","/swapfile","/var/lib/systemd-swap/swapfc/*"} --delete / /run/media/isaac/isaac_backup/backup/'
+alias backup-vps='rsync -aAXzzh --info=progress2 --delete vps-root:/mnt/data/ /run/media/isaac/isaac_backup/server'
 
 # Easy configuration aliases
 alias config-zsh="vim $XDG_CONFIG_HOME/zsh/.zshrc"
@@ -57,4 +57,7 @@ alias vps="ssh vps"
 # Using camera as webcam
 # https://www.crackedthecode.co/how-to-use-your-dslr-as-a-webcam-in-linux/
 alias webcam="sudo modprobe v4l2loopback && gphoto2 --stdout --capture-movie | ffmpeg -i - -vcodec rawvideo -pix_fmt yuv420p -threads 0 -f v4l2 /dev/video2"
+
+alias tb="nc termbin.com 9999"
+alias tbc="tb | copy"
 
