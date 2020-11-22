@@ -6,7 +6,7 @@ alias cloc='tokei'
 # alias make='make -B'
 
 # Update
-alias update='paru -Syu'
+alias update='paru -Pw; paru -Syu'
 
 # Auto compile notes
 alias notes='watchexec -w . -e rmd,yml -- pandoc -o notes.pdf metadata.yml notes.rmd'
