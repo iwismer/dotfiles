@@ -111,11 +111,11 @@ function fman() {
 # Pacman
 # --------------------
 function in() {
-	paru -Slq | fzf -q "$1" -m --preview 'paru -Si {1}' | xargs -ro paru -S
+	paru -Slq | fzf -q "$1" -m --preview 'paru -Si {1}' --preview-window='right:50%:wrap' | xargs -ro paru -S
 }
 
 function ind() {
-	paru -Slq | fzf -q "$1" -m --preview 'paru -Si {1}' | xargs -ro paru -S --asdeps
+	paru -Slq | fzf -q "$1" -m --preview 'paru -Si {1}' --preview-window='right:50%:wrap' | xargs -ro paru -S --asdeps
 }
 
 function re() {
