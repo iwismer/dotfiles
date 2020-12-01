@@ -60,3 +60,5 @@ alias webcam="sudo modprobe v4l2loopback && gphoto2 --stdout --capture-movie | f
 
 alias tb="nc termbin.com 9999"
 alias tbc="tb | copy"
+
+alias fal="alias | rg"
