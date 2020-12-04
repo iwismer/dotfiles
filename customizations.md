@@ -33,7 +33,7 @@ Set the variable `GTK_USE_PORTAL=1`
 
 ## Touchpad
 
-- Install `gebaar`
+- Install `touchegg`
 - Invert scroll direction
 
 ## Keyboard
@@ -64,15 +64,14 @@ Set the variable `GTK_USE_PORTAL=1`
 
 ## Startup
 
-- `gebaar -b`
 - Nextcloud
 - Latte dock
-- yakuake
+- `yakuake`
 - `signal-desktop --use-tray-icon --start-in-tray`
-- Slack
+- `slack -u`
 - `xbindkeys -f "$XDG_CONFIG_HOME"/xbindkeys/config`
 - `xinput set-button-map 18 1 2 3 4 5 10 11 8 9 6 7 12 13 14 15 16 17 18 19 20`
-- startup.sh
+- `systemctl --user start touchegg-client.service`
 
 ## Powertop
 
@@ -88,5 +87,9 @@ Things that need to be installed:
 
 - fzf
 - dotbare
+
+## Touchegg
+
+There is a systemd user service for it, but this is not triggered automatically. Instead it is launched as an autostart program when plasma launches. This is the only good way I could find to launch it, as I couldn't find a good way to launch it after the x session has started.
 
 

@@ -1,0 +1,10 @@
+[Unit]
+Description=Touchegg client
+After=graphical.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/touchegg
+
+[Install]
+WantedBy=graphical.target
