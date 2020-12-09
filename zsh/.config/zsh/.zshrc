@@ -46,6 +46,7 @@ plugins=(
     git
     sudo
     colored-man-pages
+    systemd
     # Seems to just break things
     #safe-paste
 )
