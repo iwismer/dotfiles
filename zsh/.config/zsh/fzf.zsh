@@ -98,6 +98,10 @@ function drmi() {
 	docker images | sed 1d | fzf -q "$1" --no-sort -m --tac | awk '{ print $3 }' | xargs -r docker rmi
 }
 
+function drmif() {
+	docker images | sed 1d | fzf -q "$1" --no-sort -m --tac | awk '{ print $3 }' | xargs -r docker rmi --force
+}
+
 # --------------------
 # Man Pages
 # --------------------
