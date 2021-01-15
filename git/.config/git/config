@@ -1,6 +1,6 @@
 [user]
 	email = isaac@iwismer.ca
-	name = iwismer
+	name = Isaac Wismer
 [core]
 	editor = vim
 	autocrlf = input
