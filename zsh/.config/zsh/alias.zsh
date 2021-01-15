@@ -56,7 +56,8 @@ alias vps="ssh vps"
 
 # Using camera as webcam
 # https://www.crackedthecode.co/how-to-use-your-dslr-as-a-webcam-in-linux/
-alias webcam="sudo modprobe v4l2loopback && gphoto2 --stdout --capture-movie | ffmpeg -i - -vcodec rawvideo -pix_fmt yuv420p -threads 0 -f v4l2 /dev/video2"
+alias webcam="sudo modprobe v4l2loopback card_label=\"VirtCam\" exclusive_caps=1 && gphoto2 --stdout --capture-movie | ffmpeg -i - -vcodec rawvideo -pix_fmt yuv420p -threads 0 -f v4l2 /dev/video2"
+alias webcam2="sudo modprobe v4l2loopback card_label=\"VirtCam\" exclusive_caps=1 && gphoto2 --stdout --capture-movie | gst-launch-1.0 fdsrc ! decodebin3 name=dec ! queue ! videoconvert ! v4l2sink device=/dev/video2"
 
 alias tb="nc termbin.com 9999"
 alias tbc="tb | copy"
