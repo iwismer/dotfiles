@@ -18,6 +18,7 @@ UnderlineFilesEnabled=true
 KeyBindings=default
 
 [Scrolling]
+HighlightScrolledLines=false
 HistoryMode=1
 HistorySize=3000
 ScrollBarPosition=1
