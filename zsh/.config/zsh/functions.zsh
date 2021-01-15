@@ -25,7 +25,7 @@ function md_format() {
 # Calculator
 # c [calculation]
 c() {
-	printf "%s\n" "$*" | bc
+	printf "%s\n" "$*" | qalc
 }
 alias c="noglob c"
 
@@ -79,3 +79,9 @@ function unarchive() {
 		echo "'$1' is not a valid file"
 	fi
 }
+
+function upload() {
+    scp $1 vps:/mnt/data/files/$1
+    echo "https://s.iwismer.ca/$1"
+}
+
