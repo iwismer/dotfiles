@@ -63,3 +63,5 @@ alias tb="nc termbin.com 9999"
 alias tbc="tb | copy"
 
 alias fal="alias | rg"
+
+alias wifiqr="nmcli device wifi show -s"
