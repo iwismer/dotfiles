@@ -65,3 +65,4 @@ alias tbc="tb | tee /dev/tty | copy"
 alias fal="alias | rg"
 
 alias wifiqr="nmcli device wifi show -s"
+
