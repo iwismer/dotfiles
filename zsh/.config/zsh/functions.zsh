@@ -85,3 +85,9 @@ function upload() {
     echo "https://s.iwismer.ca/$1"
 }
 
+# Function to create a git commit
+function com() {
+    msg="$*"
+    git commit -m $msg
+}
+
