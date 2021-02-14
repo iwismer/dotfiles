@@ -1,8 +1,12 @@
+export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+
 # Set path
 typeset -U PATH path
 path=(
 	"$HOME/.local/bin"
 	"$HOME/.local/share/cargo/bin"
+    "$GEM_HOME/bin"
+    "$HOME/.local/share/gem/ruby/2.7.0/bin"
 	"$path[@]"
 )
 export PATH
