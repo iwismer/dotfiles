@@ -69,9 +69,6 @@ Set the variable `GTK_USE_PORTAL=1`
 - `yakuake`
 - `signal-desktop --use-tray-icon --start-in-tray`
 - `slack -u`
-- `xbindkeys -f "$XDG_CONFIG_HOME"/xbindkeys/config`
-- `xinput set-button-map 18 1 2 3 4 5 10 11 8 9 6 7 12 13 14 15 16 17 18 19 20`
-- `systemctl --user start touchegg-client.service`
 
 ## Powertop
 
