@@ -51,9 +51,9 @@ Set the variable `GTK_USE_PORTAL=1`
 - meta+o: KOrganizer
 - meta+e: kmail
 - meta+shift+s: Signal
-- meta+shift+c: KCalc
-- ctrl+shift+esc: htop
-- mata+l: Lock screen
+- meta+shift+c: qalculate
+- ctrl+shift+esc: plasma-systemmonitor
+- meta+l: Lock screen
 - meta+shift+r: kstart5 plasmashell -- --replace
 - meta+shift+q: sleep 1; xset dpms force off
 
