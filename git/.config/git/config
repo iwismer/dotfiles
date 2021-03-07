@@ -4,5 +4,14 @@
 [core]
 	editor = vim
 	autocrlf = input
+	excludesfile = ~/.gitignore
+	pager = delta
 [pull]
 	rebase = true
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+    plus-style = "syntax #012800"
+    minus-style = "syntax #340001"
+    syntax-theme = Monokai Extended
+	line-numbers = true

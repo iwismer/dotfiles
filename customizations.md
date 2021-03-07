@@ -87,9 +87,8 @@ Things that need to be installed:
 
 - fzf
 - dotbare
+- git-delta (https://github.com/dandavison/delta)
 
 ## Touchegg
 
 There is a systemd user service for it, but this is not triggered automatically. Instead it is launched as an autostart program when plasma launches. This is the only good way I could find to launch it, as I couldn't find a good way to launch it after the x session has started.
-
-
