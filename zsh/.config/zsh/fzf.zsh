@@ -115,13 +115,13 @@ function fman() {
 # Pacman
 # --------------------
 function in() {
-	paru -Slq | fzf -q "$1" -m --preview 'paru -Si {1}' --preview-window='right:50%:wrap' | xargs -ro paru -S
+	paru -Slq | fzf -q "$1" -m --reverse --preview 'paru -Si {1}' --preview-window='right:50%:wrap' | xargs -ro paru -S
 }
 
 function ind() {
-	paru -Slq | fzf -q "$1" -m --preview 'paru -Si {1}' --preview-window='right:50%:wrap' | xargs -ro paru -S --asdeps
+	paru -Slq | fzf -q "$1" -m --reverse --preview 'paru -Si {1}' --preview-window='right:50%:wrap' | xargs -ro paru -S --asdeps
 }
 
 function re() {
-	paru -Qq | fzf -q "$1" -m --preview 'paru -Qi {1}' | xargs -ro paru -Rns
+	paru -Qq | fzf -q "$1" -m --reverse --preview 'paru -Qi {1}' | xargs -ro paru -Rns
 }
