@@ -27,7 +27,7 @@ function md_format() {
 c() {
 	printf "%s\n" "$*" | qalc
 }
-alias c="noglob c"
+alias c="nocorrect noglob c"
 
 function unarchive() {
 	if [ -f $1 ]; then
