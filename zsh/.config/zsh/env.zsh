@@ -11,7 +11,7 @@ path=(
 )
 export PATH
 
-export EDITOR=vim
+export EDITOR=micro
 
 # Variables for XDG folder compatibility
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
