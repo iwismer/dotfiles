@@ -33,12 +33,12 @@ alias backup-vps='rsync -aAXzzh --info=progress2 --delete vps-root:/mnt/data/ /r
 alias backup-photos='rclone sync /mnt/more-media/Pictures/ B2-photos:photos-iwismer -P --exclude .thumbnails/ --exclude db/ --exclude .videoThumbnails/ --exclude "*.pptx" --exclude "Historic/Family 1916 - 1920 small Jpegs/" --delete-during --delete-excluded --fast-list'
 
 # Easy configuration aliases
-alias c-zsh="vim $XDG_CONFIG_HOME/zsh/.zshrc"
-alias c-alias="vim $XDG_CONFIG_HOME/zsh/alias.zsh"
-alias c-env="vim $XDG_CONFIG_HOME/zsh/env.zsh"
-alias c-key="vim $XDG_CONFIG_HOME/zsh/keys.zsh"
-alias c-func="vim $XDG_CONFIG_HOME/zsh/functions.zsh"
-alias c-fzf="vim $XDG_CONFIG_HOME/zsh/fzf.zsh"
+alias c-zsh="$EDITOR $XDG_CONFIG_HOME/zsh/.zshrc"
+alias c-alias="$EDITOR $XDG_CONFIG_HOME/zsh/alias.zsh"
+alias c-env="$EDITOR $XDG_CONFIG_HOME/zsh/env.zsh"
+alias c-key="$EDITOR $XDG_CONFIG_HOME/zsh/keys.zsh"
+alias c-func="$EDITOR $XDG_CONFIG_HOME/zsh/functions.zsh"
+alias c-fzf="$EDITOR $XDG_CONFIG_HOME/zsh/fzf.zsh"
 
 # Make wget follow XDG spec
 alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
