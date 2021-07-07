@@ -24,9 +24,9 @@
 	[
 		"Markdown",
 		"Rust",
-		"Vintage"
+		"Vintage",
 	],
 	"tab_size": 4,
 	"theme": "Default.sublime-theme",
-	"translate_tabs_to_spaces": true
+	"translate_tabs_to_spaces": true,
 }
