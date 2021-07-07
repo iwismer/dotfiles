@@ -30,7 +30,7 @@ alias latte-restart='kstart5 latte-dock -- --replace'
 # Backup computer
 alias backup='sudo rsync -aAXvh --info=progress2 --info=stats1 --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/veracrypt1","/lost+found","/home/*/.cache/*","/home/*/.local/share/Trash/*","/home/*/.thumbnails/*","/swapfile","/swap/*","/var/lib/systemd-swap/swapfc/*"} --delete / /run/media/isaac/isaac_backup/backup/'
 alias backup-vps='rsync -aAXzzh --info=progress2 --delete vps-root:/mnt/data/ /run/media/isaac/isaac_backup/server'
-alias backup-photos='rclone sync /mnt/more-media/Pictures/ wasabi:iwismer-iwismer -P --exclude .thumbnails/ --exclude db/ --exclude .videoThumbnails/ --exclude "*.pptx" --exclude "Historic/Family 1916 - 1920 small Jpegs/" --delete-during --delete-excluded --fast-list'
+alias backup-photos='rclone sync /mnt/more-media/Pictures/ wasabi:iwismer-photos -P --exclude .thumbnails/ --exclude db/ --exclude .videoThumbnails/ --exclude "*.pptx" --exclude "Historic/Family 1916 - 1920 small Jpegs/" --exclude exif-info.db --delete-during --delete-excluded --fast-list'
 
 # Easy configuration aliases
 alias c-zsh="$EDITOR $XDG_CONFIG_HOME/zsh/.zshrc"
