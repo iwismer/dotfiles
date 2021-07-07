@@ -53,8 +53,8 @@ my-highlighted-down-line-or-beginning-search() {
 zle -N my-highlighted-up-line-or-beginning-search
 zle -N my-highlighted-down-line-or-beginning-search
 
-[[ -n "${key[Up]}"   ]] && bindkey -- "${key[Up]}"   my-highlighted-up-line-or-beginning-search
-[[ -n "${key[Down]}" ]] && bindkey -- "${key[Down]}" my-highlighted-down-line-or-beginning-search
+#[[ -n "${key[Up]}"   ]] && bindkey -- "${key[Up]}"   my-highlighted-up-line-or-beginning-search
+#[[ -n "${key[Down]}" ]] && bindkey -- "${key[Down]}" my-highlighted-down-line-or-beginning-search
 
 # Move back and forth 1 word with ctrl-left/right
 key[Control-Left]="${terminfo[kLFT5]}"
