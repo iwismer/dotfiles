@@ -21,8 +21,8 @@ key[Shift-Tab]="${terminfo[kcbt]}"
 [[ -n "${key[Insert]}"    ]] && bindkey -- "${key[Insert]}"    overwrite-mode
 [[ -n "${key[Backspace]}" ]] && bindkey -- "${key[Backspace]}" backward-delete-char
 [[ -n "${key[Delete]}"    ]] && bindkey -- "${key[Delete]}"    delete-char
-[[ -n "${key[Up]}"        ]] && bindkey -- "${key[Up]}"        up-line-or-history
-[[ -n "${key[Down]}"      ]] && bindkey -- "${key[Down]}"      down-line-or-history
+#[[ -n "${key[Up]}"        ]] && bindkey -- "${key[Up]}"        up-line-or-history
+#[[ -n "${key[Down]}"      ]] && bindkey -- "${key[Down]}"      down-line-or-history
 [[ -n "${key[Left]}"      ]] && bindkey -- "${key[Left]}"      backward-char
 [[ -n "${key[Right]}"     ]] && bindkey -- "${key[Right]}"     forward-char
 [[ -n "${key[PageUp]}"    ]] && bindkey -- "${key[PageUp]}"    beginning-of-buffer-or-history
@@ -53,8 +53,13 @@ my-highlighted-down-line-or-beginning-search() {
 zle -N my-highlighted-up-line-or-beginning-search
 zle -N my-highlighted-down-line-or-beginning-search
 
+# For some reason the commented lines don't work. They cause the terminal to just go one line up in history and then stop.
+# It's possibly something to do with prompt-reset???
+# Anyways, by replacing the bindkey with the two below, it seems to fix it, so maybe it's just an issue with the binding after all.
 #[[ -n "${key[Up]}"   ]] && bindkey -- "${key[Up]}"   my-highlighted-up-line-or-beginning-search
 #[[ -n "${key[Down]}" ]] && bindkey -- "${key[Down]}" my-highlighted-down-line-or-beginning-search
+bindkey "^[[A" my-highlighted-up-line-or-beginning-search # Up
+bindkey "^[[B" my-highlighted-down-line-or-beginning-search # Down
 
 # Move back and forth 1 word with ctrl-left/right
 key[Control-Left]="${terminfo[kLFT5]}"
